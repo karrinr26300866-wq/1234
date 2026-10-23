@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SnapNest image search"><title>SnapNest — Image Search</title>
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head><body>
+<header><a class="brand" href="#"><span>✦</span> SnapNest</a><small>Find a little inspiration</small></header>
+<main>
+<section class="hero"><p class="eyebrow">YOUR VISUAL DISCOVERY SPACE</p>
+<h1>Find images that<br><em>spark something.</em></h1>
+<p class="intro">Search photos, places, nature, art, and more from Wikimedia Commons.</p>
+<form id="search-form"><label class="sr-only" for="search-input">Search images</label><span class="search-icon">⌕</span>
+<input id="search-input" type="search" placeholder="Try “mountains” or “cute cats”" required>
+<button id="search-button">Search →</button></form>
+<div class="suggestions">Try: <button data-query="nature">Nature</button><button data-query="space">Space</button><button data-query="architecture">Architecture</button><button data-query="cats">Cats</button></div>
+</section>
+<section class="results" aria-live="polite" aria-busy="false"><div class="heading"><div><h2 id="results-title">A world of images awaits</h2><p id="results-subtitle">Enter a word above to begin exploring.</p></div><strong id="result-count"></strong></div>
+<div id="status-area"><div class="welcome"><div class="art">✦　◌　✧</div><h3>Your next idea starts here</h3><p>Search for a topic and discover images from around the world.</p></div></div>
+<div id="image-grid" class="grid"></div></section></main>
+<footer><span>Made for curious minds.</span><span>Images and metadata from Wikimedia Commons</span></footer>
+</body></html>
